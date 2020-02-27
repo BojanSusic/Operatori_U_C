@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Poredjenje"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tacnih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="TACNIH"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="UKUPNO"
+        android:layout_below="@+id/tacnih"/>
+    <TextView
+        android:id="@+id/prioritet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ODABERITE BROJ PRIORITETA"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

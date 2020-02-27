@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#545454"
+    android:padding="16dp"
+    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-47dp"
+        android:clearTaskOnLaunch="true"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:textAlignment="center"
+        android:text="Operatori u C"
+      android:autoSizeTextType="uniform"
+        android:layout_centerHorizontal="true"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+    <Button
+        android:id="@+id/poredaj_po_prioritetu"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="POREDAJ PO PRIORITETU"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:id="@+id/broj_prioriteta"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@+id/poredaj_po_prioritetu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="BROJ PRIORITETA"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        />
+    <Button
+        android:id="@+id/poredjenje"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/broj_prioriteta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button"
+        android:text="POREDJENJE"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:id="@+id/tablica"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poredjenje"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button"
+        android:text="TABLICA PRIORITETA"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elektrijada 2020"
+        android:layout_alignParentBottom="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="by Bojan Susic"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
