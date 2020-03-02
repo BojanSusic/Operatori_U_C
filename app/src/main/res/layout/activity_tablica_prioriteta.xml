@@ -7,7 +7,7 @@
     tools:context=".TablicaPrioriteta"
     android:background="#545454"
     android:padding="16dp">
-<RelativeLayout
+    <RelativeLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <TextView
@@ -767,6 +767,5 @@
         android:background="@drawable/button"
         android:text="NAZAD"/>
 </RelativeLayout>
-
 
 </ScrollView>

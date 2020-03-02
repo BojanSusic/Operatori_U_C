@@ -34,7 +34,7 @@ public class BrojPrioriteta extends AppCompatActivity {
     private Button petnaesti;
     private TextView Tacnih;
     private TextView Tacnonetacno;
-    private int BrojPitanja;
+    private int BrojPitanja=0;
     private TextView ukupno;
     private TextView Znak;
     private int tacnih=0;
@@ -172,13 +172,13 @@ public class BrojPrioriteta extends AppCompatActivity {
 
     }
     private void povecajUkupno(){
-                brojac++;
-                ukupno.setText("UKUPNO: "+brojac);
+        brojac++;
+        ukupno.setText("UKUPNO: "+brojac);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_broj_prioriteta);
         odaberiPitanje();
@@ -189,7 +189,7 @@ public class BrojPrioriteta extends AppCompatActivity {
             tacno();
         }
         else
-            netacno();
+            netacno(BrojPitanja+1);
     }
     private void  odaberiPitanje(){
         BrojPitanja=new Random().nextInt(15);
@@ -214,15 +214,17 @@ public class BrojPrioriteta extends AppCompatActivity {
         Tacnonetacno=(TextView) findViewById(R.id.truefalse);
         Tacnih.setText("TACNIH: "+tacnih);
     }
-    private void netacno(){
+    private void netacno(final int broj){
         new CountDownTimer(500, 1000) {
             public void onTick(long millisUntilFinished) {
                 Tacnonetacno.setBackgroundColor(Color.parseColor("#FF0000"));
+                Tacnonetacno.setText(""+broj);
             }
             public void onFinish() {
                 Tacnonetacno.setBackgroundColor(Color.parseColor("#545454"));
                 odaberiPitanje();
                 povecajUkupno();
+                Tacnonetacno.setText("");
             }
         }.start();
         Tacnonetacno=(TextView) findViewById(R.id.truefalse);
