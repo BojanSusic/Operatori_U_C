@@ -3,20 +3,207 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:layout_weight="1"
     android:orientation="vertical" >
 
    <TextView
-
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:text="POREDAJ PO PRIORITETU"
        android:textSize="20dp"
        android:layout_gravity="center"
+       android:layout_marginBottom="20dp"
        android:textAlignment="center"/>
 
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+       <RelativeLayout
+           android:id="@+id/lijevi"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:clickable="false"
+           android:layout_height="match_parent">
+           <Button
+               android:id="@+id/prvil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text=""/>
+           <Button
+               android:id="@+id/drugil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/prvil"
+               android:text=""/>
+           <Button
+               android:id="@+id/trecil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/drugil"
+               android:text=""/>
+           <Button
+               android:id="@+id/cetvrtil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/trecil"
+               android:text=""/>
+           <Button
+               android:id="@+id/petil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/cetvrtil"
+               android:text=""/>
+           <Button
+               android:id="@+id/sestil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/petil"
+               android:text=""/>
+           <Button
+               android:id="@+id/sedmil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/sestil"
+               android:text=""/>
+           <Button
+               android:id="@+id/osmil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/sedmil"
+               android:text=""/>
+           <Button
+               android:id="@+id/devetil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/osmil"
+               android:text=""/>
+           <Button
+               android:id="@+id/desetil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/devetil"
+               android:text=""/>
+           <Button
+               android:id="@+id/jedanaestil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/desetil"
+               android:text=""/>
+           <Button
+               android:id="@+id/dvanaestil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/jedanaestil"
+               android:text=""/>
+           <Button
+               android:id="@+id/trinaestil"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/dvanaestil"
+               android:text=""/>
+       </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/desni"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/prvid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <Button
+                android:id="@+id/drugid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prvid"
+                android:text=""/>
+            <Button
+                android:id="@+id/trecid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/drugid"
+                android:text=""/>
+            <Button
+                android:id="@+id/cetvrtid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trecid"
+                android:text=""/>
+            <Button
+                android:id="@+id/petid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cetvrtid"
+                android:text=""/>
+            <Button
+                android:id="@+id/sestid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/petid"
+                android:text=""/>
+            <Button
+                android:id="@+id/sedmid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sestid"
+                android:text=""/>
+            <Button
+                android:id="@+id/osmid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sedmid"
+                android:text=""/>
+            <Button
+                android:id="@+id/devetid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/osmid"
+                android:text=""/>
+            <Button
+                android:id="@+id/desetid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/devetid"
+                android:text=""/>
+            <Button
+                android:id="@+id/jedanaestid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desetid"
+                android:text=""/>
+            <Button
+                android:id="@+id/dvanaestid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jedanaestid"
+                android:text=""/>
+            <Button
+                android:id="@+id/trinaestid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dvanaestid"
+                android:text=""/>
+        </RelativeLayout>
+    </LinearLayout>
 
 
 
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/nazadbr"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:text="NAZAD" />
+</RelativeLayout>
 
 
 </LinearLayout>

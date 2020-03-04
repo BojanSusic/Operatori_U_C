@@ -14,8 +14,10 @@ import org.w3c.dom.Text;
 
 import java.util.Random;
 
+import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
+
 public class BrojPrioriteta extends AppCompatActivity {
-    public String [][]tablica={{","},{"=","+=","-=","*=","/=","%=","&=","^=","|=","<<=",">>="},{"?:"},{"||"},{"&&"},{"|"},{"^"},{"&"},{"==","!="},{"<","<=",">",">="},{"<<",">>"},{"+","-"},{"*","/","%"},{"!","~","++","--","&","(tip)","sizeof","+","-","*"},{"[ ]","( )",".","->"}};
+    public String [][]tablica={{","},{"=","+=","-=","*=","/=","%=","&=","^=","|=","<<=",">>="},{"?:"},{"||"},{"&&"},{"|"},{"^"},{"&"},{"==","!="},{"<","<=",">",">="},{"<<",">>"},{"+","-"},{"*","/","%"},{"!","~","++","--","&(adress)","(tip)","sizeof","+","-","*(pointer)"},{"[ ]","( )",".","->"}};
     private Button nazad;
     private Button prvi;
     private Button drugi;
@@ -178,7 +180,7 @@ public class BrojPrioriteta extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        this.setRequestedOrientation(SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_broj_prioriteta);
         odaberiPitanje();
