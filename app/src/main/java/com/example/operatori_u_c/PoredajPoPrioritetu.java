@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -76,6 +77,7 @@ public class PoredajPoPrioritetu extends AppCompatActivity {
                     zabrani();
                     lijeviOdabrani= finalI;
                     odigranil.add(finalI);
+                    lijeviDugmici.get(finalI).setBackgroundColor(100000000);
                 }
             });
         }
@@ -86,8 +88,10 @@ public class PoredajPoPrioritetu extends AppCompatActivity {
                 public void onClick(View v) {
                     odobri();
                     zabranidesne();
+                    desniOdabrani=finalI;
                     desniDugmici.get(finalI).setEnabled(false);
                     odigranid.add(finalI);
+                    oboji(provjeritacnost());
                 }
             });
 
@@ -141,5 +145,24 @@ public class PoredajPoPrioritetu extends AppCompatActivity {
         for(int i=0;i<13;i++){
             desniDugmici.get(i).setEnabled(false);
         }
+    }
+    public boolean provjeritacnost(){
+        for(int i = 0; i<tablica[(Integer.parseInt((String) lijeviDugmici.get(lijeviOdabrani).getText()))-1].length; i++) {
+            if (tablica[(Integer.parseInt((String) lijeviDugmici.get(lijeviOdabrani).getText())) - 1][i].compareTo(desniDugmici.get(desniOdabrani).getText().toString())==0) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public void oboji(boolean tn){
+        if(tn){
+            lijeviDugmici.get(lijeviOdabrani).setBackgroundColor(Color.parseColor("#008800"));
+            desniDugmici.get(desniOdabrani).setBackgroundColor(Color.parseColor("#008800"));
+        }
+        else{
+            lijeviDugmici.get(lijeviOdabrani).setBackgroundColor(Color.parseColor("#880000"));
+            desniDugmici.get(desniOdabrani).setBackgroundColor(Color.parseColor("#880000"));
+        }
+
     }
 }
