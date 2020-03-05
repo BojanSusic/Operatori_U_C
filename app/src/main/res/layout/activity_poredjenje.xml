@@ -9,33 +9,78 @@
     android:weightSum="2">
 
     <TextView
-        android:id="@+id/tacnih"
+        android:id="@+id/tacnihp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:text="TACNIH"
         />
-
-
     <TextView
+        android:id="@+id/ukupnop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:text="UKUPNO"
-        android:layout_below="@+id/tacnih"/>
-    <Button
-        android:id="@+id/aa"
+        android:layout_below="@+id/tacnihp"/>
+<TextView
+    android:id="@+id/obojiTacno"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/textovi"
+    android:textSize="30dp"
+    android:layout_marginBottom="10dp"
+    android:layout_centerHorizontal="true"
+    android:text=""/>
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/textovi"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/lijevitext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="**"
+            android:textSize="30dp" />
+        <TextView
+            android:id="@+id/desnitext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="**"
+            android:textSize="30dp" />
+    </LinearLayout>
 
-        android:enabled="false"
-        android:text="AAAA"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textovi"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/manje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt;" />
+        <Button
+            android:id="@+id/vece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&gt;" />
+        <Button
+            android:id="@+id/jednako"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="=" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/bb"
-        android:background="@color/colorPrimary"
+        android:id="@+id/nazadbr"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="BBBB" />
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:text="NAZAD" />
 </RelativeLayout>
